@@ -248,3 +248,23 @@ A validity gate inside a model body (a retry ladder that keeps a fillet only whe
 the result is sound) uses `shape.is_valid` and `cad.build123d.is_sound`; each
 check costs kernel time when its body runs. A periodic cylinder or revolved face has
 a seam edge that appears in CAD linework; it is not a crack.
+
+### Coordinate a pocket and a protruding feature
+
+When adjacent faces are meant to read as one surface, give them one construction plane.
+For example, terminate the overlapping cuts for a connector well on the same pocket-floor plane.
+Section across their junction. Two nearly equal cut depths leave a ledge, even when the exported
+part is a valid single solid.
+
+Sketch a raised collar from that floor and dimension its projection from the floor. If its
+outline follows the well, derive both outlines from the same centerlines and corner constraints,
+or use an offset of the parent profile for a constant-width rim. Join the root into the parent
+solid. Give the visible junction one transition, such as a chamfer that continues the parent's
+angle or a blend tangent to its wall. Independently beveling both outlines can leave crossing
+edges or a narrow crescent between them.
+
+**Check.** View the recess square-on with edges visible, then inspect sections through a straight
+side and a rounded corner. Look for one floor elevation and the intended step or blend at the
+root. Move the parent datum and rebuild to see whether the relationship holds. A boundary between
+tangent faces can be legitimate when the section has a continuous tangent. Keep a measured
+clearance, gasket groove or connector seating step wherever assembly or sealing requires it.
