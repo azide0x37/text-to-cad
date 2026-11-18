@@ -15,6 +15,23 @@ Slant demonstrates a box tilted 45° to change both the unsupported faces and th
 clearance to remove support, and which root would peel between layers under load. An edge-down body may need
 a stable sacrificial foot. Include it in the comparison. Recheck any holes whose axes change build direction.
 
+### Follow each region through the layers
+
+Section the solid perpendicular to the build axis at the intended layer height. In a side view with gravity pointing
+right to left, read the layers from left to right, away from the bed. As a loose analogy to the aerodynamic area
+rule, plot the material area by station, `A(z)`, and its change from the preceding section. A jump marks a place
+to inspect. Equal areas can hide a ledge shifting sideways or a new island appearing while another region shrinks.
+
+For each connected region, overlay the preceding layer. Locate the actual root and measure how far each new
+perimeter extends sideways beyond supported material in one layer. Compare that distance with the layer height,
+the deposited line width and overhangs tested with this filament and cooling. Where two masses need to join,
+start a web or ramp on an existing mass and widen it toward the other. Follow the local growth around bends as
+well as along straight sides.
+
+**Check in the slicer.** Preview the same pose with supports off. At each suspect layer, inspect the extrusions
+that overlap the previous layer. A bridge can span a gap when the actual paths land on both ends and the span
+works with the chosen process. Use section area to find these transitions and toolpath overlap to assess them.
+
 ## Draw the underside in the build frame
 
 A chamfer under a horizontal tab lets successive layers carry it outward. A chamfer around its visible top can
