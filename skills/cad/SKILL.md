@@ -29,6 +29,7 @@ the page the person has open updates. Files are exports, made when asked.
 | **Open an existing XBF, STEP/STP, STL, 3MF, GLB or DXF** | Show it to the user. | [Show the model](#show-the-model) |
 | **Can it be machined, cut and bent, molded or printed?** | The part's model or file, its material and the process the request names or implies; with none, no check. | [Can it be made?](#can-it-be-made) |
 | **Design or restyle a part for filament printing** | Establish the build direction, mating surfaces, motion and load. Inspect the first printed layers of the troublesome feature. | [FDM design review](references/slant3d-fdm.md), [geometry and supports](references/slant3d-geometry.md), [joints and enclosures](references/slant3d-joints.md), [production and finish](references/slant3d-production.md), [Slant 3D source index](references/slant3d-sources.md) |
+| **Design an interchangeable enclosure window or removable board mount** | Seat the part in the open shell, close the lid and trace the working load through the parts that restrain it. | [Heart Labs enclosure and floor-mount examples](references/heart-labs-enclosures.md) |
 | **Will it hold under a load, how far does it bend?** | The fea skill ($fea), on the model's id or its STEP or xbf. | Its study reference |
 
 ## Setup and paths

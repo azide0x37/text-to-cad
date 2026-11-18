@@ -47,6 +47,8 @@ are this fork's engineering practice. Actual load, travel, clearance and life de
 
 ## Carry loads into the enclosure
 
+For a comparison of lid-captured panels, floor-mounted boards and tie-through cable anchors, see the [Heart Labs enclosure examples](heart-labs-enclosures.md).
+
 - **PCB seats.** Widen a boss base with a chamfered web or connect it to the wall with a rib. Where
   the PCB underside permits, recess its projecting leads into a broad seat that supports the board
   at its intended bearing surfaces. Model the tallest solder joints before sizing the recess.
