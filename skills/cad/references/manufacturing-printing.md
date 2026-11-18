@@ -6,6 +6,9 @@ the same for every process; this is what is particular to additive processes.
 
 Slicing and sending a print to a printer is the print3d skill's ($print3d).
 
+For FDM redesigns, use the [Slant 3D field guide](slant3d-fdm.md) to turn a flagged
+face, gap or fragile detail into a change you can verify in the target slice.
+
 ## Design it
 
 What a printed part has from its first line (the rules' FDM numbers, general practice, unless another
