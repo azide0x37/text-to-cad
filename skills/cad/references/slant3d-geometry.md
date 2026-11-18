@@ -84,6 +84,24 @@ tipping, and the ties determine where the removed support leaves a mark.
 inspect each tie, its contact scar and the extraction path. Route a breakaway contact away from an electrical
 connector mouth, bearing surface or clip root. Test the intended support interface and material combination.
 
+### Back a visible cavity roof
+
+A bridge can reach both anchors and still leave visible strands on the underside of a recess. If the plate already
+uses removable interface material on the layers immediately below that face, favor a dense top interface where
+the added cost is small and bridge texture would show. Paint or enforce support locally. Leave through-holes and
+connector mouths clear, and check that the support can be gripped and pulled through the available opening.
+Use the contact gap and spacing tested for the material pair. An inaccessible roof or an acceptable bridge
+finish favors leaving the span open.
+[OrcaSlicer support placement](https://www.orcaslicer.com/wiki/print_settings/support/support_settings_support) ·
+[Interface spacing, contact distance and bridge settings](https://www.orcaslicer.com/wiki/print_settings/support/support_settings_advanced)
+
+**Check.** Keep the plate layout and other settings fixed. Overlay the first roof extrusions on the top interface
+at the chosen contact gap. Trace coverage across the face, including its edges and the material between openings.
+If a painted span stays bare, check whether the slicer skips support under bridges and reslice the local change.
+Compare the bridge and supported full-plate slices for additional tool changes, purge material, support material
+and estimated time. Using the same interface layers can still change the tool sequence. Report the backing seen
+in the toolpaths. Judge release marks and visible finish on a physical sample after removing the support.
+
 ## Bores, connector openings and guides
 
 For a side-facing bore consider a gabled roof, a hexagonal opening, or local compensation above the functional
